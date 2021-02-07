@@ -1,0 +1,70 @@
+.btn {
+    z-index: 1;
+    overflow: hidden;
+    background: transparent;
+    position: relative;
+    padding: 8px 50px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1em;
+    letter-spacing: 2px;
+    transition: 0.2s ease;
+    font-weight: bold;
+    margin: 5px 0px;
+}
+
+.btn.btn-primary-app {
+    background: var(--primary);
+    border: 4px solid var(--primary);
+    color: var(--white);
+}
+
+.btn.btn-primary-app:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0%;
+    height: 100%;
+    background: var(--white);
+    z-index: -1;
+    transition: 0.2s ease;
+}
+
+.btn.btn-primary-app:hover {
+    color: var(--primary);
+    background: var(--white);
+    transition: 0.2s ease;
+}
+
+.btn.btn-primary-app:hover:before {
+    width: 100%;
+}
+
+.btn.btn-secondary-app {
+    background: var(--secondary);
+    border: 4px solid var(--secondary);
+    color: var(--white);
+}
+
+.btn.btn-secondary-app:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0%;
+    height: 100%;
+    background: var(--white);
+    z-index: -1;
+    transition: 0.2s ease;
+}
+
+.btn.btn-secondary-app:hover {
+    color: var(--secondary);
+    background: var(--white);
+    transition: 0.2s ease;
+}
+
+.btn.btn-secondary-app:hover:before {
+    width: 100%;
+}

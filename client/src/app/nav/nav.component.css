@@ -1,3 +1,61 @@
-.dropdown-toggle, .dropdown-item {
+.dropdown-toggle,
+.dropdown-item {
     cursor: pointer;
+}
+
+
+/* demo stuff */
+
+html,
+button,
+input,
+select,
+textarea {
+    font-family: 'Montserrat', Helvetica, sans-serif;
+    color: #92a4ad;
+}
+
+.form-app {
+    border-radius: 30px;
+}
+
+.btn {
+    z-index: 1;
+    overflow: hidden;
+    background: transparent;
+    position: relative;
+    border-radius: 30px;
+    cursor: pointer;
+    /* font-size: 1em; */
+    letter-spacing: 2px;
+    transition: 0.2s ease;
+    /* font-weight: bold; */
+}
+
+.btn.btn-info-app {
+    background: var(--info);
+    /* border: 4px solid var(--info); */
+    color: var(--white);
+}
+
+.btn.btn-info-app:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0%;
+    height: 100%;
+    background: var(--white);
+    z-index: -1;
+    transition: 0.2s ease;
+}
+
+.btn.btn-info-app:hover {
+    color: var(--info);
+    background: var(--white);
+    transition: 0.2s ease;
+}
+
+.btn.btn-info-app:hover:before {
+    width: 100%;
 }
